@@ -1,0 +1,14 @@
+@import '../../components/_settings/_variables.css';
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--secondary);
+}

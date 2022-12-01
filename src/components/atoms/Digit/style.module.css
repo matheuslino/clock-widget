@@ -1,0 +1,9 @@
+@import '../../_settings/_fonts.css';
+
+.text {
+  color: #fefefe;
+  font-size: 20vw;
+  font-weight: 400;
+  font-family: 'Calibri', sans-serif;
+  opacity: 0.7;
+}

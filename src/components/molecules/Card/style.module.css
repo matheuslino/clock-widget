@@ -1,0 +1,10 @@
+@import './../../_settings/_variables.css';
+
+.Card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  border-radius: 1em;
+  background-color: var(--terciary);
+}
