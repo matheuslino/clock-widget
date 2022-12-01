@@ -1,4 +1,17 @@
+@import '../../_settings/_variables.css';
+
 .clock {
   display: flex;
   gap: 2vw;
+}
+
+.divider {
+  display: block;
+  position: absolute;
+  width: 80vw;
+  z-index: 2;
+  border: none;
+  border-radius: 5px;
+  border-bottom: min(0.3em, 0.3vw) solid var(--secondary);
+  box-shadow: var(--secondary) 0px 0.15em 0.3em 0.1em;
 }

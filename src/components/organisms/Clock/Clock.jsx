@@ -11,11 +11,14 @@ const Clock = () => {
   //   }, [])
 
   const render = (
-    <div className={styles.clock}>
-      <Card text='11' time={new Date()} period='AM' />
-      <Card text='5' />
-      <Card text='27' />
-    </div>
+    <>
+      <hr class={styles.divider} />
+      <div className={styles.clock}>
+        <Card text='11' time={new Date()} period='AM' />
+        <Card text='5' />
+        <Card text='27' />
+      </div>
+    </>
   )
 
   return render
