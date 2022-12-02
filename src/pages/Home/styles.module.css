@@ -3,13 +3,12 @@
 body {
   margin: 0;
   overflow: hidden;
-  background-color: var(--secondary);
 }
 
 header {
   position: absolute;
-  top: 1.5em;
-  right: 1.5em;
+  top: max(1.5em, 1.5vw);
+  right: max(1.5em, 1.5vw);
 }
 
 .main {
@@ -17,4 +16,5 @@ header {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: var(--secondary);
 }
