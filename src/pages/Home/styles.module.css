@@ -2,6 +2,14 @@
 
 body {
   margin: 0;
+  overflow: hidden;
+  background-color: var(--secondary);
+}
+
+header {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
 }
 
 .main {
@@ -9,6 +17,4 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  overflow: hidden;
-  background-color: var(--secondary);
 }

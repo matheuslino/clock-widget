@@ -1,0 +1,7 @@
+.container {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.container:hover {
+  transform: scale(1.1);
+}
