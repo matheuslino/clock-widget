@@ -47,8 +47,9 @@
   }
   .Card {
     position: relative;
+    height: 25vh;
   }
   .Card > div:last-child {
-    font-size: 11em !important;
+    font-size: 35vw !important;
   }
 }
