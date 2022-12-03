@@ -19,11 +19,10 @@ const Clock = () => {
 
   const render = timer && (
     <>
-      <hr className={styles.divider} />
       <div className={styles.clock}>
-        <Card text={timer.hours} period />
-        <Card text={timer.minutes} />
-        <Card text={timer?.seconds} />
+        <Card fontSize='30vw' text={timer.hours} period />
+        <Card fontSize='30vw' text={timer.minutes} />
+        <Card fontSize='10vw' text={timer?.seconds} />
       </div>
     </>
   )

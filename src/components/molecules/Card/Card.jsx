@@ -1,17 +1,19 @@
 import Digit from '../../atoms/Digit/Digit'
 import styles from './style.module.css'
 
-const Card = ({ text, period }) => {
+const Card = ({ fontSize, className, text, period }) => {
   const render = (
-    <div className={styles.Card}>
-      {period ? (
-        <>
-          <div className={styles.period}>{text < 12 ? 'AM' : 'PM'}</div>
-          <Digit>{text?.slice(-2)}</Digit>
-        </>
-      ) : (
-        <Digit>{('0' + text)?.slice(-2)}</Digit>
-      )}
+    <div className={styles.wrapper} style={{ width: fontSize }}>
+      <div className={`${styles.Card} ${className}`}>
+        {period ? (
+          <>
+            <div className={styles.period}>{text < 12 ? 'AM' : 'PM'}</div>
+            <Digit fontSize={fontSize}>{text?.slice(-2)}</Digit>
+          </>
+        ) : (
+          <Digit fontSize={fontSize}>{('0' + text)?.slice(-2)}</Digit>
+        )}
+      </div>
     </div>
   )
 
