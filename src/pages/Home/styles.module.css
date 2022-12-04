@@ -1,0 +1,27 @@
+@import '../../components/_settings/_variables.css';
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: var(--secondary);
+}
+
+header {
+  position: absolute;
+  top: max(1.5em, 1.5vw);
+  right: max(1.5em, 1.5vw);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--secondary);
+}
+
+@media (max-width: 600px) {
+  header {
+    display: none;
+  }
+}

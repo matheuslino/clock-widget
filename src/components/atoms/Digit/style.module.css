@@ -1,0 +1,8 @@
+@import '../../_settings/_fonts.css';
+
+.text {
+  color: #fefefe;
+  font-size: 20vw;
+  font-weight: 400;
+  opacity: 0.6;
+}

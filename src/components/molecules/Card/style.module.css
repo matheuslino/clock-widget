@@ -1,0 +1,55 @@
+@import './../../_settings/_variables.css';
+
+.wrapper {
+  position: relative;
+  width: 20vw;
+  padding: 0 1em;
+  aspect-ratio: 9/10;
+}
+
+.Card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 1em;
+  font-family: 'Calibri', sans-serif;
+  background: linear-gradient(var(--terciary) 30%, var(--secondary));
+  box-shadow: 0 15px 20px -4px rgba(0, 0, 0, 0.45);
+}
+.Card:after {
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: max(1.6%, 0.3em);
+  background-color: var(--secondary);
+}
+
+.period {
+  position: absolute;
+  bottom: 9%;
+  right: 9%;
+  color: #fefefe;
+  font-weight: 800;
+  font-size: max(1em, 2vw);
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    width: 90% !important;
+    padding: 0;
+    aspect-ratio: unset;
+  }
+  .Card {
+    position: relative;
+    height: 25vh;
+  }
+  .Card > div:last-child {
+    font-size: 35vw !important;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../_settings/_variables.css';
+
+.clock {
+  display: flex;
+  align-items: flex-end;
+  gap: 3vw;
+}
+
+@media (max-width: 600px) {
+  .clock {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1.5em;
+  }
+}
